@@ -7,15 +7,16 @@ body, html {
   text-align: center;
 
 }
+/*FIRST PAGE*/
 /*Title*/
 h1 {
   margin-top: 5%;
   margin-bottom: -0.25%;
-  style :none;
+  /*style :none;*/
   /*color: #434242;*/
   font-family: 'MillerBanner';
   font-weight:lighter;
-  font-size: 29 px;
+  font-size: 29px;
 }
 
 /*Sub-Title*/
@@ -65,4 +66,16 @@ a{
 /*footer*/
 footer{
       margin-top: 8%;
+}
+
+/*PROJECT PAGE*/
+
+.projects-name{
+  font-family: 'MillerBanner';
+  font-weight:lighter;
+}
+#projects-image{
+    margin-top: 2%;
+    width:705px; /* you can use % */
+    height: auto;
 }
