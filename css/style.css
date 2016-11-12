@@ -94,6 +94,8 @@ a{
 }
 .projects-header h2{
   font-size: 13px;
+  width: 132px;
+  text-align: justify;
 }
 
 .projects-name{
@@ -120,6 +122,28 @@ a{
 
 /*APPARITION*/
 #apparition-text{
-  margin-top: 4%;
-  margin-bottom: 7%;
+  margin: 4% auto 7% auto;
+  width: 311px;
+  text-align: justify;
+}
+
+/*FIREFLY*/
+.firefly-text{
+  margin: 3% auto 3% auto;
+  width: 342px;
+  text-align: justify;
+}
+
+.firefly-img img{
+  width: 340px;
+  height: auto;
+  margin: 0 11.5px 4% 11.5px;
+}
+
+
+.firefly-img-left{
+
+}
+.firefly-img-right{
+  margin-right: 1%;
 }
