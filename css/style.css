@@ -4,6 +4,7 @@ body, html {
   padding: 0;
   margin: 0;
   text-align: center;
+  min-height: 100%;
 
 }
 /*FIRST PAGE*/
@@ -107,9 +108,12 @@ a{
 }
 
 .footer-projects{
+  /*position: absolute;*/
+  bottom: 10;
   font-size: 13px;
   letter-spacing: 0.52px;
   color: #717171;
+  margin-bottom: 10px;
 }
 .footer-left{
   margin-left: 2%;
@@ -125,10 +129,12 @@ a{
   margin: 4% auto 7% auto;
   width: 311px;
   text-align: justify;
+  /*color: #717171;*/
 }
 
 /*FIREFLY*/
 .firefly-text{
+  /*color: #717171;*/
   margin: 3% auto 3% auto;
   width: 342px;
   text-align: justify;
@@ -140,10 +146,92 @@ a{
   margin: 0 11.5px 4% 11.5px;
 }
 
+/*PEUR*/
+.peur-text{
+  margin: 3% 0 3% 0;
+}
+.peur-text-left{
+  margin: 0 310px 0 0;
+}
+.peur-text-right{
+  margin: 0 0 0 310px;
+}
+.peur-img img{
+  width: 310px;
+  height: auto;
+  margin: 0 11.5px 2% 11.5px;
+}
 
-.firefly-img-left{
+/*DISPARITION*/
+.disparition-text{
+  margin: 3% auto 3% auto;
+  width: 404px;
+  text-align: justify;
+}
+.disparition-img img{
+  /*text-align: center;
+  width: 339px;
+  height : auto;*/
+}
+/*PIEDESTAL*/
+.piedestal-text{
+  margin: 3% auto 3% auto;
+  width: 200px;
+  text-align: justify;
+}
+.piedestal-img img{
+width : 300px;
+height: auto;
+margin-bottom: 1%;
+}
+
+/*THOMAS*/
+.thomas-name{
+  font-family: 'MillerBanner';
+  font-weight:lighter;
+}
+.thomas-subname{
+  font-family: 'MillerBanner';
+  font-weight:lighter;
+  color: black;
+  font-size: 23px;
+  margin-bottom: 2.75%;
+}
+.thomas-name{
+  font-family: 'MillerBanner';
+  font-weight:lighter;
+  color: black;
+}
+.thomas-body{
+  margin-left: 255px;
+  margin-top: 3.5%;
+}
+.thomas-text{
+  margin: 0 auto 0 auto;
+  width: 255px;
+  text-align: justify;
+}
+.thomas-img img{
+  margin: 3% auto 8% auto;
+  width : 255px;
+  height: auto;
+}
+
+/*KINECT*/
+
+.kinect-text {
+  margin: 0 auto -15px auto;
+  width : 290px;
+  text-align: justify;
 
 }
-.firefly-img-right{
-  margin-right: 1%;
+.kinect-gif img{
+  margin: 4% 0 3% 0;
+  width : 450px;
+  height: auto;
+}
+.kinect-img img{
+  margin-left: -33px;
+  width : 600px;
+  height: auto;
 }
