@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <title>Maëlle Carlier</title>
 
   </head>
@@ -16,40 +19,23 @@
     </a>
 
     <div id="square" class="index-square"></div>
-
+    
     <div>
-      <a class="projects-name" id="Apparition" href="apparition.html">Apparition</a>
+      <a class="projects-name" id="Apparition-projets" href="apparition.html">Apparition</a>
       ,
-      <a class="projects-name" id="Kinect" href="kinect.html">Kinect Experiment</a>
+      <a class="projects-name" id="Kinect-projets" href="kinect.html">Kinect Experiment</a>
       ,
-      <a class="projects-name" id="Firefly" href="firefly.html">A &nbspFirefly's Journey</a>
+      <a class="projects-name" id="Firefly-projets" href="firefly.html">A &nbspFirefly's Journey</a>
       ,
-      <a class="projects-name" id="Thomas" href="thomas.html">Thomas Was Dead</a>
+      <a class="projects-name" id="Thomas-projets" href="thomas.html">Thomas Was Dead</a>
       ,
-      <a class="projects-name" id="Piedestal" href="piedestal.html">Piédestal</a>
+      <a class="projects-name" id="Piedestal-projets" href="piedestal.html">Piédestal</a>
       ,
-      <a class="projects-name" id="Peur" href="peur.html">La &nbspPeur</a>
+      <a class="projects-name" id="Peur-projets" href="peur.html">La &nbspPeur</a>
       ,
-      <a class="projects-name" id="Disparition" href="disparition.html">Disparition</a>
+      <a class="projects-name" id="Disparition-projets" href="disparition.html">Disparition</a>
     </div>
 
     <img id="projects-image" src="img/Peur.jpg" />
-    <script>
-      $("#projects-image").hide();
-      $( ".projects-name" ).hover(
-        function() {
-          //alert("img/" + $(this).attr("src")+".jpg");
-          //alert( $("#projects-image").attr("src"));
-          //alert($(this).attr('id'));
-          var newname = "img/" + $(this).attr('id')+".jpg";
-
-         $("#projects-image").attr("src",newname);
-         //alert( $("#projects-image").attr("src"));
-
-        $("#projects-image").show();
-      }, function() {
-          $("#projects-image").hide();
-      });
-    </script>
   </body>
 </html>

@@ -42,12 +42,70 @@ h2{
   margin-top: 5%;
   margin-bottom: 5%;
 }
-#square {
+/*#square {
   margin-left: auto;
   margin-right: auto;
   width: 23px;
   height: 23px;
   background: #434242;
+}*/
+
+#square {
+  /*margin-top: 5%;
+  margin-bottom: 5%;*/
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: relative;
+  background: #434242;
+  top: 50%;
+}
+
+#square:hover{
+  animation: loader 2s infinite ease;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
 }
 /*Body*/
 p{
@@ -80,7 +138,7 @@ a{
 }
 #projects-image{
     margin-top: 2%;
-    width:705px; /* you can use % */
+    width:705px;
     height: auto;
 }
 
@@ -101,9 +159,15 @@ a{
 }
 
 .projects-name{
+  border-bottom: 0px solid;
   margin-top: 4%;
   margin-bottom: 0%;
 }
+.projects-name:hover{
+  border-bottom: 1px solid;
+
+}
+
 .projects-square{
   margin-top: 2%;
 }
