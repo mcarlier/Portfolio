@@ -1,6 +1,6 @@
 body, html {
   font-family: 'Source Sans Pro';
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   padding: 0;
   margin: 0;
   text-align: center;
@@ -60,7 +60,7 @@ p{
 }
 .right{
  letter-spacing: 0.6px;
- margin-left: 205px;
+ margin-left: 212px;
 }
 a{
   color: inherit;
@@ -89,13 +89,14 @@ a{
   text-align: left;
   margin-left: 2%;
   margin-top: 1%;
+
 }
 .projects-header h1{
-  font-size: 23px;
+  font-size: 25px;
 }
 .projects-header h2{
-  font-size: 13px;
-  width: 132px;
+  font-size: 14px;
+  width: 143px;
   text-align: justify;
 }
 
@@ -104,7 +105,7 @@ a{
   margin-bottom: 0%;
 }
 .projects-square{
-  margin-top: 2.5%;
+  margin-top: 2%;
 }
 
 .footer-projects{
@@ -127,7 +128,7 @@ a{
 /*APPARITION*/
 #apparition-text{
   margin: 4% auto 7% auto;
-  width: 311px;
+  width: 314px;
   text-align: justify;
   /*color: #717171;*/
 }
@@ -148,7 +149,7 @@ a{
 
 /*PEUR*/
 .peur-text{
-  margin: 3% 0 3% 0;
+  margin: 3% 0 2% 0;
 }
 .peur-text-left{
   margin: 0 310px 0 0;
@@ -165,10 +166,11 @@ a{
 /*DISPARITION*/
 .disparition-text{
   margin: 3% auto 3% auto;
-  width: 404px;
+  width: 380px;
   text-align: justify;
 }
 .disparition-img img{
+  margin-left: 1%;
   /*text-align: center;
   width: 339px;
   height : auto;*/
@@ -195,7 +197,7 @@ margin-bottom: 1%;
   font-weight:lighter;
   color: black;
   font-size: 23px;
-  margin-bottom: 2.75%;
+  margin-bottom: 2.30%;
 }
 .thomas-name{
   font-family: 'MillerBanner';
@@ -231,7 +233,7 @@ margin-bottom: 1%;
   height: auto;
 }
 .kinect-img img{
-  margin-left: -33px;
+  margin-left: 89px;
   width : 600px;
   height: auto;
 }
