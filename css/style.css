@@ -1,6 +1,6 @@
 body, html {
   font-family: 'Source Sans Pro';
-  /*font-weight: lighter;*/
+  font-weight: lighter;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -61,52 +61,19 @@ h2{
   top: 50%;
 }
 
-#square:hover{
-  animation: loader 2s infinite ease;
+
+.rotate{
+  animation: loader 2s;
 }
 @keyframes loader {
   0% {
     transform: rotate(0deg);
   }
-
-  25% {
-    transform: rotate(180deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(360deg);
-  }
-
   100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-
-  25% {
-    height: 0%;
-  }
-
-  50% {
-    height: 100%;
-  }
-
-  75% {
-    height: 100%;
-  }
-
-  100% {
-    height: 0%;
-  }
-}
 /*Body*/
 p{
   font-size: 13px;
@@ -158,12 +125,12 @@ a{
   text-align: justify;
 }
 
-.projects-name{
+.projects-title{
   border-bottom: 0px solid;
   margin-top: 4%;
   margin-bottom: 0%;
 }
-.projects-name:hover{
+.projects-title:hover{
   border-bottom: 1px solid;
 
 }
@@ -173,20 +140,25 @@ a{
 }
 
 .footer-projects{
-  /*position: absolute;*/
-  bottom: 10;
   font-size: 13px;
   letter-spacing: 0.52px;
   color: #717171;
   margin-bottom: 10px;
 }
 .footer-left{
-  margin-left: 2%;
-  float: left;
+  position:fixed;
+  bottom: 30px;
+  left: 3%;
+}
+.footer-middle{
+  position: fixed;
+  bottom : 30px;
+  /*margin-bottom: 30px;*/
 }
 .footer-right{
-  float: right;
-  margin-right: 2%;
+  position:fixed;
+  bottom: 30px;
+  right: 3%;
 }
 
 /*APPARITION*/
@@ -234,7 +206,7 @@ a{
   text-align: justify;
 }
 .disparition-img img{
-  margin-left: 1%;
+  margin: 0 0 3% 1%;
   /*text-align: center;
   width: 339px;
   height : auto;*/
@@ -300,4 +272,7 @@ margin-bottom: 1%;
   margin-left: 89px;
   width : 600px;
   height: auto;
+}
+.kinect-bottom{
+  margin-bottom: 3%;
 }
