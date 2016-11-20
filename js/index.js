@@ -12,9 +12,20 @@ $(document).ready(function(){
         var newname = "img/" + $(this).attr('id')+".jpg";
 
        $("#projects-image").attr("src",newname);
-       //alert( $("#projects-image").attr("src"));
-
       $("#projects-image").show();
+      if($(this).attr('id')!= "Apparition-projets"){
+        var randomRight = Math.floor((Math.random() * 50) + 1);
+        var randomTop = -Math.floor((Math.random() * 40))  + 11;
+        document.getElementById("projects-image").style.marginRight = randomRight +"%";
+        document.getElementById("projects-image").style.marginTop = randomTop +"%";
+      }
+      else{
+        document.getElementById("projects-image").style.marginRight = "22%";
+        document.getElementById("projects-image").style.marginTop = "0%";
+
+      }
+
+
     }, function() {
         $("#projects-image").hide();
     });

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'millerbannerlight';
+    src : url('millerbanner.otf');
+}
+
 body, html {
   font-family: 'Source Sans Pro';
   font-weight: lighter;
@@ -15,8 +20,9 @@ body, html {
 
 }
 h1 {
-  font-family: 'MillerBanner';
-  font-weight:lighter;
+  font-family: 'millerbannerlight';
+  font-weight: lighter;
+
   margin-bottom: -0.25%;
 
 }
@@ -42,17 +48,9 @@ h2{
   margin-top: 5%;
   margin-bottom: 5%;
 }
-/*#square {
-  margin-left: auto;
-  margin-right: auto;
-  width: 23px;
-  height: 23px;
-  background: #434242;
-}*/
 
 #square {
-  /*margin-top: 5%;
-  margin-bottom: 5%;*/
+
   display: inline-block;
   width: 23px;
   height: 23px;
@@ -100,11 +98,13 @@ a{
 /*PROJECTS PAGE*/
 
 .projects-name{
-  font-family: 'MillerBanner';
+  font-family: 'millerbannerlight';
   font-weight:lighter;
 }
 #projects-image{
-    margin-top: 2%;
+    float : right;
+    margin-top: -0%;
+    margin-right: 0%;
     width:705px;
     height: auto;
 }
@@ -166,12 +166,10 @@ a{
   margin: 4% auto 7% auto;
   width: 314px;
   text-align: justify;
-  /*color: #717171;*/
 }
 
 /*FIREFLY*/
 .firefly-text{
-  /*color: #717171;*/
   margin: 3% auto 3% auto;
   width: 342px;
   text-align: justify;
@@ -207,9 +205,6 @@ a{
 }
 .disparition-img img{
   margin: 0 0 3% 1%;
-  /*text-align: center;
-  width: 339px;
-  height : auto;*/
 }
 /*PIEDESTAL*/
 .piedestal-text{
@@ -225,18 +220,18 @@ margin-bottom: 1%;
 
 /*THOMAS*/
 .thomas-name{
-  font-family: 'MillerBanner';
+  font-family: 'millerbannerlight';
   font-weight:lighter;
 }
 .thomas-subname{
-  font-family: 'MillerBanner';
+  font-family: 'millerbannerlight';
   font-weight:lighter;
   color: black;
   font-size: 23px;
   margin-bottom: 2.30%;
 }
 .thomas-name{
-  font-family: 'MillerBanner';
+  font-family: 'millerbannerlight';
   font-weight:lighter;
   color: black;
 }
