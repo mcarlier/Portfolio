@@ -2,9 +2,13 @@
     font-family: 'millerbannerlight';
     src : url('millerbanner.otf');
 }
+@font-face {
+    font-family: 'sourceSans';
+    src : url('SourceSansPro-Light.otf');
+}
 
 body, html {
-  font-family: 'Source Sans Pro';
+  font-family: 'sourceSans';
   font-weight: lighter;
   padding: 0;
   margin: 0;
@@ -17,14 +21,13 @@ body, html {
 .index-header h1{
     font-size: 29px;
     margin-top: 5%;
-
 }
+
+
 h1 {
   font-family: 'millerbannerlight';
   font-weight: lighter;
-
   margin-bottom: -0.25%;
-
 }
 
 /*Sub-Title*/
@@ -36,13 +39,16 @@ h2{
   font-size: 19px;
 
 }
+/*@media screen and (min-width: 200px) and (max-width: 640px) {*/
+@media only screen and (min-width: 600px){
+  #title-left{
+   margin-left: -200px;
+  }
+  #title-right{
+    margin-left: 200px;
+  }
+}
 
-#title-left{
- margin-left: -200px;
-}
-#title-right{
-  margin-left: 200px;
-}
 /*Square*/
 .index-square{
   margin-top: 5%;
@@ -74,7 +80,7 @@ h2{
 
 /*Body*/
 p{
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.52px;
 }
 
@@ -85,6 +91,22 @@ p{
  letter-spacing: 0.6px;
  margin-left: 212px;
 }
+@media only screen and (max-width: 600px){
+  p{
+    font-size: 14px;
+  }
+  .left{
+    width:250px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right{
+   margin-left: 0px;
+   margin-top: 1%;
+  }
+}
+
 a{
   color: inherit;
   text-decoration: none;
@@ -101,6 +123,7 @@ a{
   font-family: 'millerbannerlight';
   font-weight:lighter;
 }
+
 #projects-image{
     float : right;
     margin-top: -0%;
@@ -109,7 +132,7 @@ a{
     height: auto;
 }
 
-/*PROJECT PAGE SHARE*/
+/*PROJECT PAGE SHARED*/
 .projects-header{
   text-align: left;
   margin-left: 2%;
@@ -125,6 +148,17 @@ a{
   text-align: justify;
 }
 
+@media only screen and (max-width: 800px){
+  .allprojects{
+    width: 75%;
+    margin: 0 auto 0 auto;
+  }
+  .allprojects a{
+    font-size: 17px;
+  }
+
+}
+
 .projects-title{
   border-bottom: 0px solid;
   margin-top: 4%;
@@ -134,6 +168,7 @@ a{
   border-bottom: 1px solid;
 
 }
+
 
 .projects-square{
   margin-top: 2%;
@@ -164,14 +199,14 @@ a{
 /*APPARITION*/
 #apparition-text{
   margin: 4% auto 7% auto;
-  width: 314px;
+  width: 335px;
   text-align: justify;
 }
 
 /*FIREFLY*/
 .firefly-text{
   margin: 3% auto 3% auto;
-  width: 342px;
+  width: 350px;
   text-align: justify;
 }
 
@@ -192,7 +227,7 @@ a{
   margin: 0 0 0 310px;
 }
 .peur-img img{
-  width: 310px;
+  width: 320px;
   height: auto;
   margin: 0 11.5px 2% 11.5px;
 }
@@ -209,7 +244,7 @@ a{
 /*PIEDESTAL*/
 .piedestal-text{
   margin: 3% auto 3% auto;
-  width: 200px;
+  width: 206px;
   text-align: justify;
 }
 .piedestal-img img{
@@ -264,7 +299,7 @@ margin-bottom: 1%;
   height: auto;
 }
 .kinect-img img{
-  margin-left: 89px;
+  margin-left: 110px;
   width : 600px;
   height: auto;
 }

@@ -20,7 +20,8 @@ $(document).ready(function(){
         document.getElementById("projects-image").style.marginTop = randomTop +"%";
       }
       else{
-        document.getElementById("projects-image").style.marginRight = "22%";
+        document.getElementById("projects-image").style.marginRight = "auto";
+        document.getElementById("projects-image").style.marginRight = "auto";
         document.getElementById("projects-image").style.marginTop = "0%";
 
       }
