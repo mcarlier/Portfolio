@@ -6,29 +6,29 @@ ga('create', 'UA-85336822-1', 'auto');
 ga('send', 'pageview');
 
 $(document).ready(function(){
-    $("#projects-image").hide();
-
+    $(".projects-image").hide();
+    var newname;
     $( ".projects-title" ).hover(function() {
-        var newname = "img/" + $(this).attr('id')+".jpg";
-
-       $("#projects-image").attr("src",newname);
-      $("#projects-image").show();
+         newname= $(this).attr('id')+"-img";
+        $("#"+newname).show();
       if($(this).attr('id')!= "Apparition-projets"){
         var randomRight = Math.floor((Math.random() * 50) + 1);
-        var randomTop = -Math.floor((Math.random() * 40))  + 11;
-        document.getElementById("projects-image").style.marginRight = randomRight +"%";
-        document.getElementById("projects-image").style.marginTop = randomTop +"%";
+        var randomTop = - Math.floor((Math.random() * 30))  + 11;
+        document.getElementById(newname).style.marginRight = randomRight +"%";
+        document.getElementById(newname).style.marginTop = randomTop +"%";
+        document.getElementById(newname).style.float = "right";
+
       }
       else{
-        document.getElementById("projects-image").style.marginRight = "auto";
-        document.getElementById("projects-image").style.marginRight = "auto";
-        document.getElementById("projects-image").style.marginTop = "0%";
-
+        document.getElementById(newname).style.marginRight = "auto";
+        document.getElementById(newname).style.marginRight = "auto";
+        document.getElementById(newname).style.float = "none";
+        document.getElementById(newname).style.marginTop = "0%";
       }
 
 
     }, function() {
-        $("#projects-image").hide();
+        $("#"+newname).hide();
     });
 
     $("#square").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
