@@ -419,3 +419,25 @@ margin-bottom: 1%;
 .kinect-bottom{
   margin-bottom: 3%;
 }
+
+@media only screen and (max-width: 700px){
+  .kinect-img img{
+    margin-left: 0px;
+    width : 500px;
+    height: auto;
+  }
+
+}
+@media only screen and (max-width: 500px){
+  .kinect-img img{
+    margin-left: 0px;
+    width : 320px;
+    height: auto;
+  }
+  .kinect-gif img{
+    margin: 4% 0 3% 0;
+    width : 320px;
+    height: auto;
+  }
+
+}
