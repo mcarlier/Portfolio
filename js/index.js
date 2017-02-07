@@ -11,22 +11,11 @@ $(document).ready(function(){
     $( ".projects-title" ).hover(function() {
          newname= $(this).attr('id')+"-img";
         $("#"+newname).show();
-      if($(this).attr('id')!= "Apparition-projets"){
         var randomRight = Math.floor((Math.random() * 50) + 1);
         var randomTop = - Math.floor((Math.random() * 30))  + 11;
         document.getElementById(newname).style.marginRight = randomRight +"%";
         document.getElementById(newname).style.marginTop = randomTop +"%";
         document.getElementById(newname).style.float = "right";
-
-      }
-      else{
-        document.getElementById(newname).style.marginRight = "auto";
-        document.getElementById(newname).style.marginRight = "auto";
-        document.getElementById(newname).style.float = "none";
-        document.getElementById(newname).style.marginTop = "0%";
-      }
-
-
     }, function() {
         $("#"+newname).hide();
     });
